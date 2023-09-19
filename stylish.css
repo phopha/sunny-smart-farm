@@ -1,0 +1,21 @@
+*{
+    font-family: 'Lobster', cursive;
+    padding: 0;
+    margin: 0;
+}
+.crown{
+    background-color: limegreen;
+    display: flex;
+    position: fixed;
+    align-items: center;
+
+}
+#crownLogo{
+    align-items: center;
+    display: flex;
+    justify-self: left;
+}
+.space{
+    padding-top: 100vw;
+    padding-bottom: 100vw;
+}
