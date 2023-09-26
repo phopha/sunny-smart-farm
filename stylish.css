@@ -1,19 +1,45 @@
 *{
+    font-size: auto;
     font-family: 'Lobster', cursive;
     padding: 0;
     margin: 0;
 }
 .crown{
+    padding-left: 7%;
+    padding-right: 7%;
+
+    color: white;
     background-color: limegreen;
     display: flex;
     position: fixed;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
 
 }
 #crownLogo{
     align-items: center;
     display: flex;
-    justify-self: left;
+    justify-content: left;
+}
+#crownPages{
+    width: 40%;
+    padding-left: 30%;
+    display: flex;
+    align-items: center;
+}
+#spacing{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.headBanner{
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    background-image: url("../sunny-smart-farm/public/images/smartfarm.jpg");
 }
 .space{
     padding-top: 100vw;
