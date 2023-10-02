@@ -84,7 +84,7 @@
 #ORpointer:before {
     content: "";
     position: absolute;
-    right: -20px;
+    right: -30px;
     bottom: 0;
     width: 0;
     height: 0;
@@ -109,4 +109,10 @@
     background-size: cover;
     background-position: center;
     height: 500px;
+}
+.pager{
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+    filter: drop-shadow(30px 10px 4px #252525);
 }
