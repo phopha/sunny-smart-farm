@@ -1,8 +1,9 @@
 *{
     font-size: auto;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster','Prompt', cursive,sans-serif;
     padding: 0;
     margin: 0;
+    z-index: 0;
 }
 .crown{
     padding-left: 7%;
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    z-index: 621;
 
 }
 #crownLogo{
@@ -33,15 +35,78 @@
     padding-right: 3%;
 }
 .headBanner{
+    font-size: 200%;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
+    padding: 10%;
     display: flex;
     flex-direction: row;
-    color: black;
-    background-image: url("../sunny-smart-farm/public/images/smartfarm.jpg");
+    color: white;
+    background-image: url("../public/images/smartfarm.jpg");
+    background-size: 100%;
+    filter: brightness(75%),contrast(2000%),;
+}
+.textShade{
+    filter: drop-shadow(30px 10px 4px #252525);
+}
+.anno{
+    background:linear-gradient(270deg,limegreen,orange);
+}
+#pointer {
+    width: 400px;
+    height: 4vw;
+    position: relative;
+    background: limegreen;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+#pointer:before {
+    content: "";
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 2vw solid limegreen;
+    border-top: 2vw solid transparent;
+    border-bottom: 2vw solid transparent;
+}
+#ORpointer {
+    width: 350px;
+    height: 4vw;
+    position: relative;
+    background: orange;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+#ORpointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 2vw solid orange;
+    border-top: 2vw solid transparent;
+    border-bottom: 2vw solid transparent;
 }
 .space{
     padding-top: 100vw;
     padding-bottom: 100vw;
+}
+#center{
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    left: 100px;
+    top: 5px;
+}
+#what{
+    background-image: url("public/images/mainie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
