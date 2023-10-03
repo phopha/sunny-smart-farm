@@ -124,6 +124,7 @@ h1{
 .stuff{
     padding: 30px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -141,4 +142,33 @@ h1{
     color: gray;
     justify-content: center;
     padding: 10px;
+}
+.items{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#thumb{
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    border-color: #252525;
+    border-width: 1px;
+    filter: drop-shadow(0px 0px 4px #252525);
+}
+#buybut{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: orange;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+#center2{
+    align-self: center;
+    justify-self: center;
+
 }
