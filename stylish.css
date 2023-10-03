@@ -50,7 +50,7 @@
     filter: brightness(75%),contrast(2000%),;
 }
 h1{
-    filter: drop-shadow(10px 5px 4px #5a554b);
+    filter: drop-shadow(5px 2px 2px #5a554b);
 }
 .anno{
     background:linear-gradient(270deg,limegreen,orange);
