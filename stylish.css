@@ -5,6 +5,11 @@
     margin: 0;
     z-index: 0;
 }
+a{
+    text-decoration: none;
+    color: limegreen;
+    padding: 10px;
+}
 .crown{
     padding-left: 7%;
     padding-right: 7%;
@@ -17,6 +22,8 @@
     justify-content: space-around;
     width: 100%;
     z-index: 621;
+    filter: drop-shadow(2px 2px 4px #5f533a);
+
 
 }
 #crownLogo{
@@ -29,19 +36,171 @@
 #crownPages{
     filter: drop-shadow(10px 5px 4px #5a554b);
     width: 40%;
-    padding-left: 20%;
+    padding-left: 10%;
     display: flex;
     align-items: center;
 }
+
 #spacing{
     padding-left: 3%;
     padding-right: 3%;
-    transition: ease-out 1s;
+    transition: ease 0.5s;
 }
 #spacing:hover{
     color: orange;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: 2px solid white;
+    border-color: white;
+    transition: ease 0.5s;
+    user-select: none;
+}
+#login:hover{
+    background-color: orange;
+    transform: scale(1.1);
+    display: block;
+}
+.loginForm{
+    color: white;
+    width: 30%;
+    height: 60%;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    border:5px solid orange ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    position: fixed;
+    left: 35%;
+    top: 20%;
+    transform: scale(0);
+}
+.loginForm.show{
+    color: white;
+    width: 30%;
+    height: 60%;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    border:5px solid orange ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    position: fixed;
+    left: 35%;
+    top: 20%;
+    transform: scale(1);
+}
+.regForm{
+    color: white;
+    width: 30%;
+    height: 70%;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    border:5px solid orange ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    position: fixed;
+    left: 35%;
+    top: 15%;
+    transform: scale(0);
+}
+.regForm.show{
+    color: white;
+    width: 30%;
+    height: 70%;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    border:5px solid orange ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    position: fixed;
+    left: 35%;
+    top: 15%;
+    transform: scale(1);
+}
+input[type=text] {
+    height: 40px;
+    width: 70%;
+    margin: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 183, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(55px);
+    background: none;
+    opacity: 70%;
+    font-size: 20px;
+}
+input[type=email] {
+    height: 40px;
+    width: 70%;
+    margin: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 183, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(55px);
+    background: none;
+    opacity: 70%;
+    font-size: 20px;
+}
+input[type=submit]{
+    font-size: 30px;
+    border-radius: 15px;
+    background: none;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: ease 0.5s;
+}
+input[type=submit]:hover{
+    font-size: 30px;
+    border-radius: 15px;
+    background: none;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: limegreen;
+    border-color: limegreen;
+    transform: scale(1.2);
+}
+input[type=checkbox]{
+    border-color: black;
+    transition: 0.5s;
+}
+input[type=checkbox]:hover{
+    border-color: limegreen;
+    transform: scale(1.2);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
 .headBanner{
     font-size: 200%;
     justify-content: center;
@@ -55,12 +214,19 @@
     filter: brightness(75%),contrast(2000%),;
 }
 h1{
+    align-self: center;
+    filter: drop-shadow(5px 2px 2px #5a554b);
+}
+h2{
+    align-self: center;
     filter: drop-shadow(5px 2px 2px #5a554b);
 }
 .anno{
     background:linear-gradient(270deg,limegreen,orange);
 }
 #pointer {
+    filter: drop-shadow(5px 2px 2px #5a554b);
+
     width: 400px;
     height: 4vw;
     position: relative;
