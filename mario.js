@@ -11,5 +11,6 @@ function switcher(){
     console.log("toggle register popup")
 }
 function closeAll() {
-    var c = document.getElementById("closeButton")
+    regForm.classList.remove("show")
+    logForm.classList.remove("show")
 }

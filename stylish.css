@@ -183,11 +183,15 @@ input[type=submit]:hover{
     transform: scale(1.2);
 }
 input[type=checkbox]{
+    margin: 5px;
     border-color: black;
+    border-radius: 15px;
     transition: 0.5s;
 }
 input[type=checkbox]:hover{
+    margin: 5px;
     border-color: limegreen;
+    border-radius: 15px;
     transform: scale(1.2);
 }
 form{
@@ -219,6 +223,11 @@ h1{
 }
 h2{
     align-self: center;
+    filter: drop-shadow(5px 2px 2px #5a554b);
+}
+h4{
+    color: rgb(201, 201, 201);
+    padding: 10px;
     filter: drop-shadow(5px 2px 2px #5a554b);
 }
 .anno{
