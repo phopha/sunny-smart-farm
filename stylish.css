@@ -35,20 +35,36 @@ a{
 }
 #crownPages{
     filter: drop-shadow(10px 5px 4px #5a554b);
-    width: 40%;
+    width: 50%;
     padding-left: 10%;
     display: flex;
     align-items: center;
+}
+
+#whitePages{
+    font-size: 18px;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+    transition: ease 0.5s;
+    color: white;
+
+}
+
+#whitePages:hover{
+    color: orange;
+    transform: scale(1.2);
+}
+
+#pageLink{
+    color: white;
 }
 
 #spacing{
     padding-left: 3%;
     padding-right: 3%;
     transition: ease 0.5s;
-}
-#spacing:hover{
-    color: orange;
-    transform: scale(1.4);
+    color: white;
 }
 
 #login{
@@ -302,7 +318,8 @@ h4{
     filter: drop-shadow(0px 0px 4px #252525);
 }
 .stuff{
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -310,6 +327,9 @@ h4{
 }
 #topics{
     width: 300px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -355,4 +375,57 @@ h4{
     align-self: center;
     justify-self: center;
 
+}
+#statusBar {
+    filter: drop-shadow(5px 2px 2px #5a554b);
+
+    width: 400px;
+    height: 4vw;
+    position: relative;
+    background: grey;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+}
+#statusBar-humid {
+    filter: drop-shadow(5px 2px 2px #5a554b);
+    border-radius: 10px;
+
+    width: 45%;
+    height: 4vw;
+    position: relative;
+    background: rgb(151, 252, 255);
+    align-items: center;
+    justify-items: center;
+}
+#statusBar-temp {
+    filter: drop-shadow(5px 2px 2px #5a554b);
+    border-radius: 10px;
+
+    width: 37%;
+    height: 4vw;
+    position: relative;
+    background: rgb(255, 153, 0);
+    align-items: center;
+    justify-items: center;
+}
+#statusBar-waterLev {
+    filter: drop-shadow(5px 2px 2px #5a554b);
+    border-radius: 10px;
+
+    width: 63%;
+    height: 4vw;
+    position: relative;
+    background: rgb(0, 140, 255);
+    align-items: center;
+    justify-items: center;
+}
+.half-circle {
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: gold;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid gray;
+    border-bottom: 0;
 }
