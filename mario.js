@@ -14,3 +14,12 @@ function closeAll() {
     regForm.classList.remove("show")
     logForm.classList.remove("show")
 }
+function reArt(){
+    window.location.href = "article.html"
+}
+function reIOT(){
+    window.location.href = "dashboard.html"
+}
+function reStore(){
+    window.location.href = "store.html"
+}
