@@ -48,7 +48,7 @@
                 fill="currentColor"
               />
             </svg>
-            <h2 id="login" onclick="popupLogin()"> Login</h2>
+            <h2 id="login" onclick="popupLogin()"></h2>
 
 
         </div>
@@ -101,10 +101,10 @@
     </div>
 
     <div class="loginForm">
-        <form action="whatThe.php">
+        <form action="whatThe.php" method="get">
             <h1>Login</h1>
             <input type="text" name="Username" placeholder="Username" required>
-            <input type="text" name="Username" placeholder="Password" required>
+            <input type="text" name="Password" placeholder="Password" required>
             <div style="display: flex;flex-direction: row; padding: 10px;">
                 <input type="checkbox" id="remember" label="Remember password?">
                 <label for="remember">Remember password</label>
@@ -130,6 +130,11 @@
     <div class="copyright">
         Copyright © 2022 CE KMITL. All Rights Reserved.
     </div>
+    <?php
+        $User = array("Login");
+        echo $User[0];
+        echo $Username;
+    ?>
 </body>
 <script src="mario.js"></script>
 </html>
