@@ -22,10 +22,10 @@
             <h1>Sunny smart farm</h1>
         </div>
         <div id="crownPages">
-            <a href="index.html" id="whitePages">Home</a>
-            <a href="dashboard.html" id="whitePages">SmartFarm IOT Dashboard</a>
-            <a href="store.html" id="whitePages">Store</a>
-            <a href="article.html" id="whitePages">Article</a>
+            <a href="index.php" id="whitePages">Home</a>
+            <a href="dashboard.php" id="whitePages">SmartFarm IOT Dashboard</a>
+            <a href="store.php" id="whitePages">Store</a>
+            <a href="article.php" id="whitePages">Article</a>
             <svg id="whitePages"
               width="24px"
               height="24px"
@@ -48,7 +48,7 @@
                 fill="currentColor"
               />
             </svg>
-            <a href="login.html" id="login">Login</a>
+            <a href="login.php" id="login">Login</a>
 
 
         </div>

@@ -242,9 +242,8 @@ form{
     display: flex;
     flex-direction: row;
     color: white;
-    background-image: url("../public/images/smartfarm.jpg");
+    background-image: url("./public/images/smartfarm.png");
     background-size: 100%;
-    filter: brightness(75%),contrast(2000%),;
 }
 h1{
     align-self: center;

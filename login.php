@@ -22,10 +22,10 @@
             <h1>Sunny smart farm</h1>
         </div>
         <div id="crownPages">
-            <a href="index.html" id="whitePages">Home</a>
-            <a href="dashboard.html" id="whitePages">SmartFarm IOT Dashboard</a>
-            <a href="store.html" id="whitePages">Store</a>
-            <a href="article.html" id="whitePages">Article</a>
+            <a href="index.php" id="whitePages">Home</a>
+            <a href="dashboard.php" id="whitePages">SmartFarm IOT Dashboard</a>
+            <a href="store.php" id="whitePages">Store</a>
+            <a href="article.php" id="whitePages">Article</a>
             <svg id="whitePages"
               width="24px"
               height="24px"
@@ -48,17 +48,17 @@
                 fill="currentColor"
               />
             </svg>
-            <a href="login.html" id="login">Login</a>
+            <a href="login.php" id="login">Login</a>
 
 
         </div>
     </div>
     
     <div class="loginForm">
-        <form action="logInput.php" method="post">
+        <form action="regis/login_db.php" method="post">
             <h1>Login</h1>
-            <input type="text" name="Username" placeholder="Username" required>
-            <input type="password" name="Username" placeholder="Password" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
             <div style="display: flex;flex-direction: row; padding: 10px;">
                 <input type="checkbox" id="remember" label="Remember password?">
                 <label for="remember">Remember password</label>
@@ -68,12 +68,12 @@
         </form>
     </div>
     <div class="regForm">
-        <form action="#">
+        <form action="regis/register_db.php" method="post">
             <h1>Register</h1>
-            <input type="text" name="Username" placeholder="Username" required>
+            <input type="text" name="username" placeholder="Username" required>
             <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="password" placeholder="Password" required>
-            <input type="text" name="passwordCon" placeholder="Confirm Password" required>
+            <input type="text" name="password1" placeholder="Password" required>
+            <input type="text" name="password2 placeholder="Confirm Password" required>
             
                 <input type="submit" title="submit">
             <h2 style="padding-top: 20px;">already have an account? <a onclick="switcher()">Login</a></h2>
