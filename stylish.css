@@ -68,6 +68,7 @@ a{
 }
 
 #login{
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +90,7 @@ a{
 .loginForm{
     color: white;
     width: 30%;
-    height: 60%;
+    height: 70%;
     backdrop-filter: blur(30px);
     border-radius: 15px;
     border:5px solid orange ;
@@ -106,8 +107,8 @@ a{
 .loginForm.show{
     color: white;
     width: 30%;
-    height: 60%;
-    backdrop-filter: blur(30px);
+    height: 70%;
+    backdrop-filter: invert(25%);
     border-radius: 15px;
     border:5px solid orange ;
     display: flex;
@@ -140,8 +141,8 @@ a{
 .regForm.show{
     color: white;
     width: 30%;
-    height: 70%;
-    backdrop-filter: blur(30px);
+    height: 80%;
+    backdrop-filter: invert(25%);
     border-radius: 15px;
     border:5px solid orange ;
     display: flex;
@@ -154,7 +155,19 @@ a{
     top: 15%;
     transform: scale(1);
 }
-input[type=text] {
+input[type=text]  {
+    height: 40px;
+    width: 70%;
+    margin: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 183, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(55px);
+    background: none;
+    opacity: 70%;
+    font-size: 20px;
+}
+input[type=password] {
     height: 40px;
     width: 70%;
     margin: 30px;
